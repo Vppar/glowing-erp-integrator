@@ -1,0 +1,39 @@
+{
+  "name": "glowing-rest-api",
+  "version": "0.0.0",
+  "private": true,
+  "description": "Glowing Catalog's REST API",
+  "main": "lib/app.js",
+  "scripts": {
+    "test": "grunt test",
+    "start": "./node_modules/.bin/nodemon ./server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Tunts/glowing-rest-api"
+  },
+  "author": "Mathias Kretschek <mathias@kretschek.com.br> (http://mathias.ms/)",
+  "license": "ClosedSource",
+  "bugs": {
+    "url": "https://github.com/Tunts/glowing-rest-api/issues"
+  },
+  "homepage": "https://github.com/Tunts/glowing-rest-api",
+  "devDependencies": {
+    "chai": "^1.9.1",
+    "grunt": "^0.4.4",
+    "grunt-contrib-jshint": "^0.10.0",
+    "grunt-mocha-test": "^0.10.2",
+    "jshint": "^2.5.0",
+    "mocha": "^1.18.2",
+    "nodemon": "^1.0.17",
+    "sinon": "^1.9.1",
+    "sinon-chai": "^2.5.0",
+    "supertest": "^0.11.0"
+  },
+  "dependencies": {
+    "body-parser": "^1.2.0",
+    "express": "^4.1.1",
+    "firebase": "^1.0.15-3",
+    "underscore": "^1.6.0"
+  }
+}

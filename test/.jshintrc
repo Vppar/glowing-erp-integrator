@@ -1,0 +1,11 @@
+{
+  "expr" : true,
+  "globals" : {
+    "define" : true,
+    "it" : true,
+    "before" : true,
+    "beforeEach" : true,
+    "after" : true,
+    "afterEach" : true
+  }
+}
