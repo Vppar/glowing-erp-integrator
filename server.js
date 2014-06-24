@@ -5,5 +5,3 @@ var server = require('./lib/app')();
 
 server.listen(PORT);
 console.log('Serving', server.name, 'on port', PORT, '...');
-
-
