@@ -34,6 +34,7 @@
     "body-parser": "^1.2.0",
     "express": "^4.1.1",
     "firebase": "^1.0.15-3",
-    "underscore": "^1.6.0"
+    "underscore": "^1.6.0",
+    "mandrill-api":">=1.0.2"
   }
 }
