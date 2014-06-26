@@ -1,1 +1,0 @@
-//TODO test [.get('/core/billet-request/verifyBilletStatus', BilletRequestEndpoint.verifyBilletStatus());]  ENDPOINT

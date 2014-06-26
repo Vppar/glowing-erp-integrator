@@ -1,6 +1,6 @@
 var expect = require('chai').expect;
 
-var MODULE_PATH = '../../lib/listeners';
+var MODULE_PATH = '../../../lib/listeners';
 
 describe('listeners module', function () {
   it('is accessible', function () {
@@ -16,4 +16,4 @@ describe('listeners module', function () {
 
     expect(listeners).to.be.a('function');
   });
-}); // routes module
+});
