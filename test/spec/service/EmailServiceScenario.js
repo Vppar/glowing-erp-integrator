@@ -8,8 +8,7 @@ describe('Service: EmailServiceScenario', function() {
 			"billetLink": "vpink.vc",
 			"consultant":{
 				"name": "Test VPink",
-				//"email": "jarvis@tuntscorp.com"
-				"email": "rafael.andrade@tuntscorp.com"
+				"email": "jarvis@tuntscorp.com"
 			}
 		};
 		EmailService.sendBilletToCustomer(billetRequestSnapshot, function(error, sucess) {
@@ -33,7 +32,7 @@ describe('Service: EmailServiceScenario', function() {
 		var billetRequestSnapshot = {
 			"consultant":{
 				"name": "Test VPink",
-				"email": "rafael.andrade@tuntscorp.com"
+				"email": "jarvis@tuntscorp.com"
 			}
 		};
 		EmailService.sendApprovedPayment(billetRequestSnapshot, function(error, sucess) {
