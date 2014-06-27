@@ -1,7 +1,8 @@
 
 var PORT = process.env.NODE_PORT || 8080;
 
-var server = require('./lib/app')();
+var Server = require('./lib/App')();
 
-server.listen(PORT);
-console.log('Serving', server.name, 'on port', PORT, '...');
+Server.listen(PORT);
+
+console.log('Serving', Server.name, 'on port', PORT, '...');
