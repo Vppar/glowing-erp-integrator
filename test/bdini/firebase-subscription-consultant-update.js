@@ -1,5 +1,6 @@
 'use strict';
 
+var Config = require('../../lib/Config');
 var FirebaseBackend = require('../../lib/backends/FirebaseBackend');
 var consultantSubscriptionUpdateQueueRef = FirebaseBackend.refs.base.child(Config.CONSULTANT_SUBSCRIPTION_UPDATE_QUEUE_REF);
 
