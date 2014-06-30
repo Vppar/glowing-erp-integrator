@@ -1,6 +1,6 @@
 'use strict';
 
-var FirebaseBackend = require('../backends/firebase');
+var FirebaseBackend = require('../../lib/backends/FirebaseBackend');
 var subscriptionConsultantRequestQueueRef = FirebaseBackend.refs.base.child('pending/subscription-consultant-request-queue');
 
 exports = module.exports = add;
