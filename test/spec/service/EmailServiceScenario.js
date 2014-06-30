@@ -1,4 +1,4 @@
-var EmailService = require('../../../lib/services/email');
+var EmailService = require('../../../lib/services/EmailService');
 var assert = require("assert");
 
 describe('Service: EmailServiceScenario', function() {

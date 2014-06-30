@@ -1,5 +1,7 @@
 'use strict';
 
+var FirebaseBackend = require('../backends/firebase');
+var subscriptionConsultantRequestQueueRef = FirebaseBackend.refs.base.child('pending/subscription-consultant-request-queue');
 var Config = require('../../lib/Config');
 var FirebaseBackend = require('../../lib/backends/FirebaseBackend');
 var subscriptionConsultantRequestChildRef = FirebaseBackend.refs.base.child(Config.consumer.SUBSCRIPTION_CONSULTANT_REQUEST_CHILD);
@@ -7,6 +9,7 @@ var subscriptionConsultantRequestChildRef = FirebaseBackend.refs.base.child(Conf
 exports = module.exports = add;
 
 function add(subscriptionConsultantRequest) {
+  FirebaseBackend.set(subscriptionConsultantRequestQueueRef, subscriptionConsultantRequest, null, function(err, result) {
   FirebaseBackend.set(subscriptionConsultantRequestChildRef, subscriptionConsultantRequest, null, function(err, result) {
   		if(err) {
   			console.log(err);  		
