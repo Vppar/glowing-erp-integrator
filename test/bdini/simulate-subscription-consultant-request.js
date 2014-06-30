@@ -1,3 +1,5 @@
+// Simulate Glowing-Catalog adding new
+
 'use strict';
 
 var Config = require('../../lib/Config');
@@ -35,14 +37,12 @@ consultant.phone = '11 3333 4444';
 consultant.cellphone = '11 98444 2322';
 consultant.emailPrimer = 'dsfsdf@ddd.com';
 
-add(subscriptionConsultantRequest);
 var subscriptionConsultantRequest = {};
 subscriptionConsultantRequest.uuid = 1111;
 subscriptionConsultantRequest.status = 'PENDING';
 subscriptionConsultantRequest.planType = 'ANUAL_12X';
 subscriptionConsultantRequest.date = 1383066000000;
 subscriptionConsultantRequest.consultant = consultant;
-
 add(JSON.stringify(subscriptionConsultantRequest));
 
 subscriptionConsultantRequest.uuid = '2222';
