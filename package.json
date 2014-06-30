@@ -1,23 +1,23 @@
 {
-  "name": "glowing-rest-api",
+  "name": "glowing-erp-integrator",
   "version": "0.0.0",
   "private": true,
-  "description": "Glowing Catalog's REST API",
-  "main": "lib/app.js",
+  "description": "Glowing ERP Integrator",
+  "main": "lib/server.js",
   "scripts": {
     "test": "grunt test",
     "start": "./node_modules/.bin/nodemon ./server"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/Tunts/glowing-rest-api"
+    "url": "https://github.com/Tunts/glowing-erp-integrator"
   },
-  "author": "Mathias Kretschek <mathias@kretschek.com.br> (http://mathias.ms/)",
+  "author": "",
   "license": "ClosedSource",
   "bugs": {
-    "url": "https://github.com/Tunts/glowing-rest-api/issues"
+    "url": "https://github.com/Tunts/glowing-erp-integrator/issues"
   },
-  "homepage": "https://github.com/Tunts/glowing-rest-api",
+  "homepage": "https://github.com/Tunts/glowing-erp-integrator",
   "devDependencies": {
     "chai": "^1.9.1",
     "grunt": "^0.4.4",
