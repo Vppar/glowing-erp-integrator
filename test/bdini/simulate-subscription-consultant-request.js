@@ -40,7 +40,6 @@ consultant.emailPrimer = 'dsfsdf@ddd.com';
 
 var subscriptionConsultantRequest = {};
 subscriptionConsultantRequest.uuid = 1111;
-subscriptionConsultantRequest.status = 'PENDING';
 subscriptionConsultantRequest.planType = 'ANUAL_12X';
 subscriptionConsultantRequest.date = 1383066000000;
 subscriptionConsultantRequest.consultant = consultant;
