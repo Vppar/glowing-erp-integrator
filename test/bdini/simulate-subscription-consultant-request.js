@@ -1,4 +1,5 @@
-// Simulate Glowing-Catalog adding new
+// Simulate Glowing-Catalog adding new subscriptions
+// Do not execute in production environment
 
 'use strict';
 
