@@ -19,30 +19,6 @@ function add(subscriptionConsultantRequest) {
   });
 };
 
-/*var endereco = {};
-endereco.tipo = 'RUA';
-endereco.logradouro = '15 de Novembro';
-endereco.numero = '1020';
-endereco.bairro = 'JD. MARIA';
-endereco.complemento = 'APTO 2';
-endereco.cep = '12600123';
-endereco.codigoIBGECidade = '3554102';
-endereco.tipoEndereco = 'ENDERECO_SEDE';
-
-var telefone = {};
-telefone.ddi = '55';
-telefone.ddd = '12';
-telefone.numero = '99999999';
-
-var consultant = {};
-consultant.nome = 'terceiro criado pelo node - teste 02';
-consultant.documento = '592.521.245-27';
-consultant.emails = ['terceiro.teste@gmail.com'];
-consultant.rg = '42.943.412-1';
-consultant.dataNascimento = '12-08-1970';
-consultant.enderecos = [endereco];
-consultant.telefones = [telefone];*/
-
 var address = {};
 address.street = 'rua 1';
 address.number = 555;
@@ -51,9 +27,9 @@ var consultant = {};
 consultant.address = address;
 consultant.subscriptionExpirationDate = 1383066000000;
 consultant.uuid = '9999';
-consultant.name = 'Joao da Silva';
-consultant.cep = '12122999';
-consultant.cpf = '434.325.864-50';
+consultant.name = 'Joao da Silva II';
+consultant.cep = '12328460';
+consultant.cpf = '165.182.541-65';
 consultant.email = 'teste@teste.com';
 consultant.cityOrigin = 'Sao Paulo';
 consultant.countryOrigin = 'Brasil';
