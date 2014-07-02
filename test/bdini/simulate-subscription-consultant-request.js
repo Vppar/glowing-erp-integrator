@@ -26,7 +26,6 @@ address.number = '555';
 var consultant = {};
 consultant.address = address;
 consultant.subscriptionExpirationDate = 1383066000000;
-consultant.uuid = '9999';
 consultant.name = 'Joao da Silva';
 consultant.cep = '12122999';
 consultant.cpf = '33344433322';
@@ -39,10 +38,13 @@ consultant.cellphone = '11 98444 2322';
 consultant.emailPrimer = 'dsfsdf@ddd.com';
 
 var subscriptionConsultantRequest = {};
-subscriptionConsultantRequest.uuid = 1111;
 subscriptionConsultantRequest.planType = 'GLOSS';
-subscriptionConsultantRequest.date = 1383066000000;
+subscriptionConsultantRequest.subscriptionDate = 1383066000000;
 subscriptionConsultantRequest.consultant = consultant;
+//subscriptionConsultantRequest.installmentsQty = 1; //FASE 2 do projeto
+
+subscriptionConsultantRequest.consultant.uuid = '9999';
+subscriptionConsultantRequest.uuid = '1111';
 add(JSON.stringify(subscriptionConsultantRequest));
 
 subscriptionConsultantRequest.uuid = '2222';
