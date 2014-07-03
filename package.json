@@ -35,6 +35,7 @@
     "express": "^4.1.1",
     "firebase": "^1.0.15-3",
     "underscore": "^1.6.0",
-    "mandrill-api":">=1.0.2"
+    "mandrill-api":">=1.0.2",
+    "async": "~0.1.22"
   }
 }
