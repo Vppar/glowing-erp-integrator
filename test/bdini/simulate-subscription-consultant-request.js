@@ -10,6 +10,9 @@ var consultantSubscriptionRequestQueueRef = FirebaseBackend.refs.base.child(Conf
 exports = module.exports = add;
 
 function add(subscriptionConsultantRequest) {
+	
+	console.log(JSON.parse(subscriptionConsultantRequest));
+	
   FirebaseBackend.push(consultantSubscriptionRequestQueueRef, subscriptionConsultantRequest, null, function(err, result) {
   		if(err) {
   			console.log(err);  		
@@ -30,7 +33,7 @@ consultant.uuid = '9999';
 consultant.name = 'Joao da Silva';
 consultant.cep = '12122999';
 consultant.cpf = '33344433322';
-consultant.email = 'ddd@ddd.com';
+consultant.email = 'rafaelolian@gmail.com';
 consultant.cityOrigin = 'Sao Paulo';
 consultant.countryOrigin = 'Brasil';
 consultant.complement = 'Apto 333';
@@ -39,21 +42,19 @@ consultant.cellphone = '11 98444 2322';
 consultant.emailPrimer = 'dsfsdf@ddd.com';
 
 var subscriptionConsultantRequest = {};
-subscriptionConsultantRequest.uuid = 1111;
+subscriptionConsultantRequest.uuid = '1111';
 subscriptionConsultantRequest.planType = 'GLOSS';
-subscriptionConsultantRequest.date = 1383066000000;
 subscriptionConsultantRequest.subscriptionDate = 1383066000000;
 subscriptionConsultantRequest.consultant = consultant;
 //subscriptionConsultantRequest.installmentsQty = 1; //FASE 2 do projeto
 
 subscriptionConsultantRequest.consultant.uuid = '9999';
-subscriptionConsultantRequest.uuid = '1111';
 add(JSON.stringify(subscriptionConsultantRequest));
 
-subscriptionConsultantRequest.uuid = '2222';
-subscriptionConsultantRequest.consultant.uuid = '8888';
-add(JSON.stringify(subscriptionConsultantRequest));
-
-subscriptionConsultantRequest.uuid = '3333';
-subscriptionConsultantRequest.consultant.uuid = '7777';
-add(JSON.stringify(subscriptionConsultantRequest));
+//subscriptionConsultantRequest.uuid = '2222';
+//subscriptionConsultantRequest.consultant.uuid = '8888';
+//add(JSON.stringify(subscriptionConsultantRequest));
+//
+//subscriptionConsultantRequest.uuid = '3333';
+//subscriptionConsultantRequest.consultant.uuid = '7777';
+//add(JSON.stringify(subscriptionConsultantRequest));
