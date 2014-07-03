@@ -48,10 +48,10 @@ subscriptionConsultantRequest.consultant = consultant;
 subscriptionConsultantRequest.consultant.uuid = '9999';
 add(JSON.stringify(subscriptionConsultantRequest));
 
-//subscriptionConsultantRequest.uuid = '2222';
-//subscriptionConsultantRequest.consultant.uuid = '8888';
-//add(JSON.stringify(subscriptionConsultantRequest));
-//
-//subscriptionConsultantRequest.uuid = '3333';
-//subscriptionConsultantRequest.consultant.uuid = '7777';
-//add(JSON.stringify(subscriptionConsultantRequest));
+subscriptionConsultantRequest.uuid = '2222';
+subscriptionConsultantRequest.consultant.uuid = '8888';
+add(JSON.stringify(subscriptionConsultantRequest));
+
+subscriptionConsultantRequest.uuid = '3333';
+subscriptionConsultantRequest.consultant.uuid = '7777';
+add(JSON.stringify(subscriptionConsultantRequest));
