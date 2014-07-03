@@ -10,9 +10,6 @@ var consultantSubscriptionRequestQueueRef = FirebaseBackend.refs.base.child(Conf
 exports = module.exports = add;
 
 function add(subscriptionConsultantRequest) {
-	
-	console.log(JSON.parse(subscriptionConsultantRequest));
-	
   FirebaseBackend.push(consultantSubscriptionRequestQueueRef, subscriptionConsultantRequest, null, function(err, result) {
   		if(err) {
   			console.log(err);  		
@@ -31,8 +28,8 @@ consultant.address = address;
 consultant.subscriptionExpirationDate = 1383066000000;
 consultant.uuid = '9999';
 consultant.name = 'Joao da Silva';
-consultant.cep = '12122999';
-consultant.cpf = '33344433322';
+consultant.cep = '12328460';
+consultant.cpf = '768.646.352-44';
 consultant.email = 'rafaelolian@gmail.com';
 consultant.cityOrigin = 'Sao Paulo';
 consultant.countryOrigin = 'Brasil';
