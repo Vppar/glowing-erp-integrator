@@ -14,9 +14,10 @@ function add(subscriptionConsultantUpdate) {
       if(err) {
         console.log(err);     
       } else {
-        console.log(result);
+        console.log('OK');
       }
   });
+  return true;
 };
 
 var subscriptionConsultantUpdate = {};

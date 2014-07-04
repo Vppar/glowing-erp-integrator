@@ -10,13 +10,14 @@ var consultantSubscriptionRequestQueueRef = FirebaseBackend.refs.base.child(Conf
 exports = module.exports = add;
 
 function add(subscriptionConsultantRequest) {
-  FirebaseBackend.push(consultantSubscriptionRequestQueueRef, subscriptionConsultantRequest, null, function(err, result) {
+  FirebaseBackend.push(consultantSubscriptionRequestQueueRef, subscriptionConsultantRequest, function(err, result) {
   		if(err) {
   			console.log(err);  		
   		} else {
-  			console.log(result);
+  			console.log('OK');
   		}
   });
+  return true;
 };
 
 var address = {};
