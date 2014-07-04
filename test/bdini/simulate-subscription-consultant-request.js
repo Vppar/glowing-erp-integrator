@@ -46,13 +46,10 @@ subscriptionConsultantRequest.subscriptionDate = 1383066000000;
 subscriptionConsultantRequest.consultant = consultant;
 //subscriptionConsultantRequest.installmentsQty = 1; //FASE 2 do projeto
 
-subscriptionConsultantRequest.consultant.uuid = '9999';
 add(JSON.stringify(subscriptionConsultantRequest));
 
 subscriptionConsultantRequest.uuid = '2222';
-subscriptionConsultantRequest.consultant.uuid = '8888';
 add(JSON.stringify(subscriptionConsultantRequest));
 
 subscriptionConsultantRequest.uuid = '3333';
-subscriptionConsultantRequest.consultant.uuid = '7777';
 add(JSON.stringify(subscriptionConsultantRequest));
