@@ -1,54 +1,69 @@
+'use strict';
+
 var EmailService = require('../../../lib/services/EmailService');
-var assert = require("assert");
+var Config = require('../../../lib/Config');
+var Mandrill = require('mandrill-api/mandrill');
+//var assert = require("assert");
+var sinon  = require('sinon');
+var expect = require('chai').expect;
+var should = require('chai').should();
+
+var validSubscription;
+var invalidSubscription;
 
 describe('Service: EmailServiceScenario', function() {
 
-	it('should send billet email', function(done) {
-		var billetRequestSnapshot = {
-			"billetLink": "vpink.vc",
-			"consultant":{
-				"name": "Test VPink",
-				"email": "jarvis@tuntscorp.com"
-			}
-		};
-		EmailService.sendBilletToCustomer(billetRequestSnapshot, function(error, sucess) {
-			done();
-			assert.equal(1, sucess.length);
-			assert.equal('sent', sucess[0].status);
+	beforeEach(function() { 
+		validSubscription = {"billet":{"link": "www.vpas.com.br/1"},
+							 "snapshot":{"consultant":{"name": "Test VPink","email": "jarvis@tuntscorp.com"}}};
+		invalidSubscription = {"billet":{"link": "www.vpas.com.br/1"}};
+	});
+
+	//TODO Should mock Mandrill external calls.
+	xit('should send billet email. Valid Subscription', function(done) {
+		EmailService.sendBilletToCustomer(validSubscription, function(err, success) {
+			should.not.exist(err);
+  			should.exist(success);
+  			success.should.be.an('object');
+  			done();
 		});
 	});
 
-	it('should not send billet email', function(done) {
-		var billetRequestSnapshot = {
-			"consultant":{}
-		};
-		EmailService.sendBilletToCustomer(billetRequestSnapshot, function(error, sucess) {
-			done();
-			assert.equal('Invalid param', error);
+	it('should not send billet email. Invalid Subscription', function(done) {
+		EmailService.sendBilletToCustomer(invalidSubscription, function(err, success) {
+			should.not.exist(success);
+	  		should.exist(err);
+  			err.should.be.a('string'); 
+  			done();
 		});
 	});
 
-	it('should send billet email', function(done) {
-		var billetRequestSnapshot = {
-			"consultant":{
-				"name": "Test VPink",
-				"email": "jarvis@tuntscorp.com"
-			}
-		};
-		EmailService.sendApprovedPayment(billetRequestSnapshot, function(error, sucess) {
-			done();
-			assert.equal(1, sucess.length);
-			assert.equal('sent', sucess[0].status);
+	//TODO Should mock Mandrill external calls.	
+	xit('should send approved payment email. Valid Subscription. Billet is payed', function(done) {
+		validSubscription.billet.status = 'PAYED';
+		EmailService.sendApprovedPayment(validSubscription, function(err, success) {
+			should.not.exist(err);
+  			should.exist(success);
+  			success.should.be.an('object');
+  			done();
 		});
 	});
 
-	it('should not send billet email', function(done) {
-		var billetRequestSnapshot = {
-			"consultant":{}
-		};
-		EmailService.sendApprovedPayment(billetRequestSnapshot, function(error, sucess) {
-			done();
-			assert.equal('Invalid param', error);
+	it('should not send approved payment email. Valid Subscription. Billet is not payed', function(done) {
+		EmailService.sendApprovedPayment(validSubscription, function(err, success) {
+			should.not.exist(err);
+  			should.exist(success);
+  			success.should.be.an('object');
+  			done();
+		});
+	});
+
+	it('should not send approved payment email. Invalid Subscription', function(done) {
+		EmailService.sendApprovedPayment(invalidSubscription, function(err, success) {
+			should.not.exist(err);
+  			should.exist(success);
+  			success.should.be.an('object');
+  			done();
 		});
 	});
 
