@@ -40,16 +40,15 @@ consultant.cellphone = '11 98444 2322';
 consultant.emailPrimer = 'dsfsdf@ddd.com';
 
 var subscriptionConsultantRequest = {};
-subscriptionConsultantRequest.uuid = '1111';
 subscriptionConsultantRequest.planType = 'GLOSS';
 subscriptionConsultantRequest.subscriptionDate = 1383066000000;
 subscriptionConsultantRequest.consultant = consultant;
-//subscriptionConsultantRequest.installmentsQty = 1; //FASE 2 do projeto
 
+subscriptionConsultantRequest.uuid = '77';
 add(JSON.stringify(subscriptionConsultantRequest));
 
-subscriptionConsultantRequest.uuid = '2222';
+subscriptionConsultantRequest.uuid = '88';
 add(JSON.stringify(subscriptionConsultantRequest));
 
-subscriptionConsultantRequest.uuid = '3333';
+subscriptionConsultantRequest.uuid = '99';
 add(JSON.stringify(subscriptionConsultantRequest));
