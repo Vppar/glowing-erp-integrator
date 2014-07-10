@@ -136,57 +136,61 @@ describe('Service: CustomerServiceScenario', function() {
 	})
 	
 	//TODO: mock
-	it('Should create a new customer in mergeCustomer method when it doesnt exists in vpsa', function(done) {
-		
-		setTimeout(done, 2000);
-				
+	xit('Should create a new customer in mergeCustomer method when it doesnt exists in vpsa', function(done) {
 		var subscription = {
 			uuid: 1,
 			snapshot: { 
 				consultant: {
 					name: 'unit test',
-					cpf: '332.328.226-49',
+					cpf: '815.311.380-12',
 					emailPrimer: 'unitteste@test.com',
 					email: 'unitteste2@test.com',
 					cep: '12328460',
 					phone: '1239548772',
 					cellphone: '1239640123',
-					address: {
-						street: 'avenida dom pedro'
-					}
+					address: [{
+						street: 'avenida dom pedro',
+						number: '1010'
+					}]
 			}}
 		};
 		
 		CustomerService.mergeCustomer(subscription, function(err, result) {
-			
-			console.log(err);
 			console.log(result);
 			
-			/*expect(err).to.be.null;
 			expect(result).not.to.be.null;
-			result.should.be.an('string');	*/
+			expect(err).to.be.null;
 		
-			;
-		}).done();
+			done();
+		});
 	})
 	
 	//TODO: mock
 	xit('Should update the customer in mergeCustomer method when it exists in vpsa', function(done) {
-		var obj = {};
-		
-		CustomerService.getByDocument(1, '12.216.878/0009-03', function(err, result) {
+		var subscription = {
+				uuid: 1,
+				snapshot: { 
+					consultant: {
+						name: 'unit test 2',
+						cpf: '815.311.380-12',
+						emailPrimer: 'unitteste2@test.com',
+						email: 'unitteste2@test.com',
+						phone: '1239548772',
+						cellphone: '1239640123',
+						cep:'12328460',
+						address: {
+							street: 'avenida dom pedro 2',
+							number: '2020'
+						}
+				}}
+			};
 			
-				obj = JSON.parse(result);
-				
-				
-				
-				
-				
-				
+			CustomerService.mergeCustomer(subscription, function(err, result) {
+				expect(result).not.to.be.null;
+				expect(err).to.be.null;
+			
 				done();
-
-		});
-		
+			});
 	})
 });
 
