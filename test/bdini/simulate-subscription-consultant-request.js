@@ -45,10 +45,10 @@ subscriptionConsultantRequest.subscriptionDate = 1383066000000;
 subscriptionConsultantRequest.consultant = consultant;
 
 subscriptionConsultantRequest.uuid = '77';
-add(JSON.stringify(subscriptionConsultantRequest));
+add(subscriptionConsultantRequest);
 
 subscriptionConsultantRequest.uuid = '88';
-add(JSON.stringify(subscriptionConsultantRequest));
+add(subscriptionConsultantRequest);
 
 subscriptionConsultantRequest.uuid = '99';
-add(JSON.stringify(subscriptionConsultantRequest));
+add(subscriptionConsultantRequest);
