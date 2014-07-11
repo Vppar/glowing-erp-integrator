@@ -44,11 +44,11 @@ subscriptionConsultantRequest.planType = 'GLOSS';
 subscriptionConsultantRequest.subscriptionDate = 1383066000000;
 subscriptionConsultantRequest.consultant = consultant;
 
-subscriptionConsultantRequest.uuid = '77';
+subscriptionConsultantRequest.uuid = '177';
 add(subscriptionConsultantRequest);
 
-subscriptionConsultantRequest.uuid = '88';
+subscriptionConsultantRequest.uuid = '188';
 add(subscriptionConsultantRequest);
 
-subscriptionConsultantRequest.uuid = '99';
+subscriptionConsultantRequest.uuid = '199';
 add(subscriptionConsultantRequest);
