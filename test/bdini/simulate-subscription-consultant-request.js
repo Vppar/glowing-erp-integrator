@@ -43,7 +43,7 @@ consultant.cityOrigin = 'Jacareí';
 consultant.complement = 'complemento 2';
 consultant.countryOrigin = 'Brasil';
 consultant.cpf = '27763305100';
-consultant.email = 'rafael.andrade@tuntscorp.com';
+consultant.email = 'lucas.andrade@tuntscorp.com.br';
 consultant.emailPrimer = 'teste@teste.com';
 consultant.emissary = 'SSP';
 consultant.gender = 'Masculio';
@@ -61,8 +61,8 @@ subscriptionConsultantRequest.consultant = consultant;
 subscriptionConsultantRequest.uuid = 'abc111112';
 add(subscriptionConsultantRequest);
 
-subscriptionConsultantRequest.uuid = 'abc222222';
+/*subscriptionConsultantRequest.uuid = 'abc222222';
 add(subscriptionConsultantRequest);
 
 subscriptionConsultantRequest.uuid = 'abc333332';
-add(subscriptionConsultantRequest);
+add(subscriptionConsultantRequest);*/
