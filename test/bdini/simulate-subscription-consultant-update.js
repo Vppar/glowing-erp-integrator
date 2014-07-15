@@ -1,5 +1,5 @@
 // Simulate Glowing-ERP-Integrator requesting consultant update with new expiration date
-// Do not execute in production environment
+// by adding a message on reference queue Config.CONSULTANT_SUBSCRIPTION_UPDATE_QUEUE_REF
 
 'use strict';
 
