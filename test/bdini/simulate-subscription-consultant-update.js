@@ -22,6 +22,7 @@ function add(subscriptionConsultantUpdate) {
 
 var subscriptionConsultantUpdate = {};
 subscriptionConsultantUpdate.uuid = '223324324234';
+subscriptionConsultantUpdate.origin = Config.APP_ORIGIN;
 subscriptionConsultantUpdate.consultant = {};
 subscriptionConsultantUpdate.consultant.uuid = '3333';
 subscriptionConsultantUpdate.consultant.email = 'teste@test.com';
@@ -31,6 +32,7 @@ add(subscriptionConsultantUpdate);
 
 var subscriptionConsultantUpdate = {};
 subscriptionConsultantUpdate.uuid = '888824324234';
+subscriptionConsultantUpdate.origin = Config.APP_ORIGIN;
 subscriptionConsultantUpdate.consultant = {};
 subscriptionConsultantUpdate.consultant.uuid = '2222';
 subscriptionConsultantUpdate.consultant.email = 'bbbb@test.com';
@@ -40,6 +42,7 @@ add(subscriptionConsultantUpdate);
 
 var subscriptionConsultantUpdate = {};
 subscriptionConsultantUpdate.uuid = '999924324234';
+subscriptionConsultantUpdate.origin = Config.APP_ORIGIN;
 subscriptionConsultantUpdate.consultant = {};
 subscriptionConsultantUpdate.consultant.uuid = '7777';
 subscriptionConsultantUpdate.consultant.email = 'aaaa@test.com';
