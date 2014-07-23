@@ -20,6 +20,7 @@ function add(subscriptionConsultantUpdate) {
   return true;
 };
 
+/*
 var subscriptionConsultantUpdate = {};
 subscriptionConsultantUpdate.uuid = '223324324234';
 subscriptionConsultantUpdate.origin = Config.APP_ORIGIN;
@@ -27,7 +28,6 @@ subscriptionConsultantUpdate.consultant = {};
 subscriptionConsultantUpdate.consultant.uuid = '3333';
 subscriptionConsultantUpdate.consultant.email = 'teste@test.com';
 subscriptionConsultantUpdate.consultant.newSubscriptionExpirationDate = 1383066000000;
-
 add(subscriptionConsultantUpdate);
 
 var subscriptionConsultantUpdate = {};
@@ -37,15 +37,15 @@ subscriptionConsultantUpdate.consultant = {};
 subscriptionConsultantUpdate.consultant.uuid = '2222';
 subscriptionConsultantUpdate.consultant.email = 'bbbb@test.com';
 subscriptionConsultantUpdate.consultant.newSubscriptionExpirationDate = 1383066000000;
-
 add(subscriptionConsultantUpdate);
+*/
 
 var subscriptionConsultantUpdate = {};
-subscriptionConsultantUpdate.uuid = '999924324234';
+subscriptionConsultantUpdate.uuid = 'be7d8de3-0241-4bc8-9972-00fa37b775bd';
 subscriptionConsultantUpdate.origin = Config.APP_ORIGIN;
 subscriptionConsultantUpdate.consultant = {};
-subscriptionConsultantUpdate.consultant.uuid = '7777';
-subscriptionConsultantUpdate.consultant.email = 'aaaa@test.com';
-subscriptionConsultantUpdate.consultant.newSubscriptionExpirationDate = 1383066000000;
+subscriptionConsultantUpdate.consultant.uuid = '9cc58a70-0ec7-11e4-ac00-01000e000001';
+subscriptionConsultantUpdate.consultant.email = 'lucas.andrade@tuntscorp.com';
+subscriptionConsultantUpdate.consultant.newSubscriptionExpirationDate = 1397102400000;
 
 add(subscriptionConsultantUpdate);
