@@ -66,3 +66,11 @@ add(subscriptionConsultantRequest);
 
 subscriptionConsultantRequest.uuid = 'abc333332';
 add(subscriptionConsultantRequest);
+
+/*
+ * fail
+ * subscriptionConsultantRequesFail.consultant = null;
+add(subscriptionConsultantRequest);*/
+
+
+
