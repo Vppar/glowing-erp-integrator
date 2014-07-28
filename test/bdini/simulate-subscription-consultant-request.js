@@ -43,34 +43,32 @@ consultant.cityOrigin = 'Jacareí';
 consultant.complement = 'complemento 2';
 consultant.countryOrigin = 'Brasil';
 consultant.cpf = '27763305100';
-consultant.email = 'rafael.andrade@tuntscorp.com';
+consultant.email = 'lucas.andrade@tuntscorp.com';
 consultant.emailPrimer = 'teste@teste.com';
 consultant.emissary = 'SSP';
 consultant.gender = 'Masculio';
 consultant.holderDocument = '27763305100';
 consultant.marital = 'Casado(a)';
-consultant.name = 'RafaelAndrade';
+consultant.name = 'Rafael Andrade';
 consultant.phone = '31252151515';
 consultant.uuid = '5c90cbb0-02ef-11e4-aa2b-01000e000002222';
 
 var subscriptionConsultantRequest = {};
-subscriptionConsultantRequest.planType = 'GLOSS';
+subscriptionConsultantRequest.planType = 'BLUSH';
 subscriptionConsultantRequest.subscriptionDate = 1383066000000;
 subscriptionConsultantRequest.consultant = consultant;
 
-subscriptionConsultantRequest.uuid = 'abc111112';
+subscriptionConsultantRequest.uuid = 'a19234123421134';
 add(subscriptionConsultantRequest);
 
+/*
 subscriptionConsultantRequest.uuid = 'abc222222';
 add(subscriptionConsultantRequest);
 
 subscriptionConsultantRequest.uuid = 'abc333332';
-add(subscriptionConsultantRequest);
+add(subscriptionConsultantRequest);*/
 
 /*
  * fail
  * subscriptionConsultantRequesFail.consultant = null;
 add(subscriptionConsultantRequest);*/
-
-
-
