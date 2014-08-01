@@ -1,3 +1,5 @@
+(function () {
+	
 'use strict';
 
 var EmailService = require('../../../lib/services/EmailService');
@@ -68,3 +70,5 @@ describe('Service: EmailServiceScenario', function() {
 	});
 
 });
+
+})();

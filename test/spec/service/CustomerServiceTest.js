@@ -1,3 +1,5 @@
+(function () {
+	
 'use strict';
 
 var CustomerService = require('../../../lib/services/CustomerService');
@@ -14,7 +16,7 @@ describe('Service: CustomerServiceScenario', function() {
 			nome: 'Customer Name 2',
 			documento: '585.872.378-02',
 			enderecos: [{ tipo: 'AVENIDA', logradouro: 'logradouro teste', numero: '45', bairro: 'bairro teste', cep: '12328460', codigoIBGECidade: '3549904'}]
-		}	
+		};	
 	});
 	
 	xit('getByDocument: should call CustomerVPSAClient.getByDocument once', function(done){
@@ -26,7 +28,7 @@ describe('Service: CustomerServiceScenario', function() {
 		expect(stub.calledOnce).to.be.true;
 		
 		done();
-	})
+	});
 	
 	xit('getByDocument: should get error message callback when document is empty or not type of string', function(done){
 		CustomerService.getByDocument(1, null, function(err, result){
@@ -54,7 +56,7 @@ describe('Service: CustomerServiceScenario', function() {
   			expect(err).to.equal('[CustomerService.getByDocument][Subscription: 1][Error: customerDocument parameter is invalid]');
 		});
 		done();
-	})
+	});
 	
 	xit('create: should call CustomerVPSAClient.create once', function(done){
 		var stub = sinon.stub(CustomerVPSAClient, 'create').returns('teste867867');
@@ -64,7 +66,7 @@ describe('Service: CustomerServiceScenario', function() {
 		expect(stub.calledOnce).to.be.true;
 		
 		done();
-	})
+	});
 	
 	xit('create: should get error message callback when customer is empty', function(done){
 		CustomerService.create(1, null, function(err, result){
@@ -72,8 +74,8 @@ describe('Service: CustomerServiceScenario', function() {
 			expect(result).to.be.undefined;
 			expect(err).to.be.equal('[CustomerService.create][Subscription: 1][Error: NewCustomer parameter is empty]');
 			done();
-		})
-	})
+		});
+	});
 	
 	xit('create: should get error message callback when customer doesnt have name, document or address', function(done){
 		customerValid.nome = null;
@@ -82,7 +84,7 @@ describe('Service: CustomerServiceScenario', function() {
 			expect(err).not.to.be.null;
 			expect(result).to.be.undefined;
 			expect(err).to.be.equal('[CustomerService.create][Subscription: 1][Error: Check the following attributes: nome, documento and enderecos]');
-		})
+		});
 		
 		customerValid.nome = 'Customer Name';
 		customerValid.documento = null;
@@ -91,7 +93,7 @@ describe('Service: CustomerServiceScenario', function() {
 			expect(err).not.to.be.null;
 			expect(result).to.be.undefined;
 			expect(err).to.be.equal('[CustomerService.create][Subscription: 1][Error: Check the following attributes: nome, documento and enderecos]');
-		})
+		});
 		
 		customerValid.nome = 'Customer Name';
 		customerValid.documento = '255.595.874-60';
@@ -101,10 +103,10 @@ describe('Service: CustomerServiceScenario', function() {
 			expect(err).not.to.be.null;
 			expect(result).to.be.undefined;
 			expect(err).to.be.equal('[CustomerService.create][Subscription: 1][Error: Check the following attributes: nome, documento and enderecos]');
-		})
+		});
 		
 		done();
-	})
+	});
 	
 	it('mergeCustomer: should get error message callback method when consultant is empty', function(done) {
 		var subscription = {
@@ -116,9 +118,9 @@ describe('Service: CustomerServiceScenario', function() {
 			expect(err).not.to.be.null;
 			expect(result).to.be.undefined;
 			expect(err).to.be.equal('[CustomerService.mergeCustomer][Subscription: 1][Error: Customer parameter is invalid]');
-		})
+		});
 		done();
-	})
+	});
 	
 	it('mergeCustomer: should create a new customer when it doesnt exists in vpsa', function(done) {
 		var subscription = {
@@ -147,7 +149,7 @@ describe('Service: CustomerServiceScenario', function() {
 		
 			done();
 		});
-	})
+	});
 	
 	//TODO: mock
 	xit('mergeCustomer : should update the customer when it exists in vpsa', function(done) {
@@ -175,10 +177,7 @@ describe('Service: CustomerServiceScenario', function() {
 			
 				done();
 			});
-	})
+	});
 });
 
-
-
-
-
+})();

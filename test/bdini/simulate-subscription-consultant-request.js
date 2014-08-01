@@ -1,5 +1,7 @@
-// Simulate Glowing-Catalog adding new subscriptions on reference queue Config.CONSULTANT_SUBSCRIPTION_REQUEST_QUEUE_REF
+(function () {
+
 'use strict';
+// Simulate Glowing-Catalog adding new subscriptions on reference queue Config.CONSULTANT_SUBSCRIPTION_REQUEST_QUEUE_REF
 
 var Config = require('../../lib/Config');
 var FirebaseBackend = require('../../lib/backends/FirebaseBackend');
@@ -16,7 +18,7 @@ function add(subscriptionConsultantRequest) {
   		}
   });
   return true;
-};
+}
 
 var address = {};
 address.street = 'Rua dos Crisântemos';
@@ -72,3 +74,5 @@ add(subscriptionConsultantRequest);*/
  * fail
  * subscriptionConsultantRequesFail.consultant = null;
 add(subscriptionConsultantRequest);*/
+
+})();
