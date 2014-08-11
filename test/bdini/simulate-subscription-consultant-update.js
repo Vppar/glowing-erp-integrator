@@ -1,7 +1,9 @@
-// Simulate Glowing-ERP-Integrator requesting consultant update with new expiration date
-// by adding a message on reference queue Config.CONSULTANT_SUBSCRIPTION_UPDATE_QUEUE_REF
+(function () {
 
 'use strict';
+
+// Simulate Glowing-ERP-Integrator requesting consultant update with new expiration date
+// by adding a message on reference queue Config.CONSULTANT_SUBSCRIPTION_UPDATE_QUEUE_REF
 
 var Config = require('../../lib/Config');
 var FirebaseBackend = require('../../lib/backends/FirebaseBackend');
@@ -12,13 +14,13 @@ exports = module.exports = add;
 function add(subscriptionConsultantUpdate) {
   FirebaseBackend.push(consultantSubscriptionUpdateQueueRef, subscriptionConsultantUpdate, function(err, result) {
       if(err) {
-        console.log(err);     
+        console.log(err);    
       } else {
         console.log('OK');
       }
   });
   return true;
-};
+}
 
 /*
 var subscriptionConsultantUpdate = {};
@@ -49,3 +51,5 @@ subscriptionConsultantUpdate.consultant.email = 'lucas.andrade@tuntscorp.com';
 subscriptionConsultantUpdate.consultant.newSubscriptionExpirationDate = 1397102400000;
 
 add(subscriptionConsultantUpdate);
+
+})();
