@@ -57,10 +57,12 @@ consultant.uuid = '5c90cbb0-02ef-11e4-aa2b-01000e000002222';
 
 var subscriptionConsultantRequest = {};
 subscriptionConsultantRequest.planType = 'BLUSH';
+//subscriptionConsultantRequest.paymentType = 'PAYMENT_TYPE_CC';
+subscriptionConsultantRequest.paymentType = 'PAYMENT_TYPE_BILLET';
 subscriptionConsultantRequest.subscriptionDate = 1383066000000;
 subscriptionConsultantRequest.consultant = consultant;
 
-subscriptionConsultantRequest.uuid = 'a19234123421134';
+subscriptionConsultantRequest.uuid = 'b2';
 add(subscriptionConsultantRequest);
 
 /*

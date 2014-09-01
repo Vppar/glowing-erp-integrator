@@ -43,12 +43,23 @@ add(subscriptionConsultantUpdate);
 */
 
 var subscriptionConsultantUpdate = {};
-subscriptionConsultantUpdate.uuid = 'be7d8de3-0241-4bc8-9972-00fa37b775bd';
+subscriptionConsultantUpdate.uuid = '3ba3f5e0-2c7e-11e4-8469-0b000e000001';
 subscriptionConsultantUpdate.origin = Config.APP_ORIGIN;
 subscriptionConsultantUpdate.consultant = {};
-subscriptionConsultantUpdate.consultant.uuid = '9cc58a70-0ec7-11e4-ac00-01000e000001';
-subscriptionConsultantUpdate.consultant.email = 'lucas.andrade@tuntscorp.com';
-subscriptionConsultantUpdate.consultant.newSubscriptionExpirationDate = 1397102400000;
+subscriptionConsultantUpdate.consultant.uuid = '3ba3f5e0-2c7e-11e4-8469-0b000e000001';
+subscriptionConsultantUpdate.consultant.email = 'rennan.nogarotto@tuntscorp.com';
+subscriptionConsultantUpdate.consultant.newSubscriptionExpirationDate = 1409667071000;
+
+// 1409494271000   -> 31/8/1014
+
+// 1397102400000   -> 10/4/2014
+
+// 1409580671000   -. 1/9/2014
+
+
+// 1409667071000   -> 2/9/2014
+
+// 1409148671000   -> 27/8/2014
 
 add(subscriptionConsultantUpdate);
 
